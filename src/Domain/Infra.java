@@ -3,6 +3,7 @@ package Domain;
 import Entities.Salas;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Infra {
     private ArrayList<Salas> salas;
@@ -46,4 +47,31 @@ public class Infra {
             throw new Exception("Sala já está desocupada");
         }
     }
+    public Salas[] getAllSalas () throws Exception {
+        Salas[] salas = new Salas[this.salas.size()];
+        for (int i = 0; i < salas.length; i++) {
+            salas[i] = this.salas.get(i);
+        }
+        if (salas[0] == null) {
+            throw new Exception("Produtos não podem ser null");
+        }
+        return salas;
+    }
+
+    @Override
+    public String toString() {
+        String value = "";
+        try {
+            Salas[] salas = getAllSalas();
+            value =  "Infra{" +
+                    "salas=" + Arrays.toString(salas) +
+                    '}';
+        } catch (Exception e) {
+            e.getMessage();
+        }
+        return value;
+    }
+
+
+
 }

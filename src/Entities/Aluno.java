@@ -64,7 +64,7 @@ public class Aluno {
     @Override
     public String toString() {
         return "Aluno" +
-                "disciplinas=" + Arrays.toString(disciplinas) +
+                " disciplinas=" + Arrays.toString(disciplinas) +
                 ", historico=" + Arrays.toString(historico) +
                 ", nome='" + nome + '\'' +
                 ", matricula=" + matricula;

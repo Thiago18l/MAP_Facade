@@ -41,4 +41,14 @@ public class Salas {
     public void desocuparSala () {
         this.status = false;
     }
+    @Override
+    public String toString() {
+        return "Salas{" +
+                "nome_sala='" + nome_sala + '\'' +
+                ", capacidade_sala=" + capacidade_sala +
+                ", status=" + status +
+                '}';
+    }
+
+
 }

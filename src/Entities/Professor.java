@@ -53,9 +53,9 @@ public class Professor {
     @Override
     public String toString() {
         return "Professor" +
-                "nome='" + nome + '\'' +
-                ", matricula=" + matricula +
-                ", disciplinas=" + Arrays.toString(disciplinas) +
-                ", tempoDeCasa='" + tempoDeCasa + " ano";
+                " nome = " + nome + '\'' +
+                ", matricula = " + matricula +
+                ", disciplinas = " + Arrays.toString(disciplinas) +
+                ", tempoDeCasa = " + tempoDeCasa + " ano";
     }
 }

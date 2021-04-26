@@ -79,5 +79,9 @@ public class SIG_Facade {
         ArrayList<Salas> salas_aula = new ArrayList<>();
         salas_aula.add(salas);
         infra.addSalas(salas_aula);
+
+        System.out.println("DADOS DAS SALAS");
+        System.out.println(infra);
+
     }
 }
