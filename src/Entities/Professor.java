@@ -52,7 +52,7 @@ public class Professor {
 
     @Override
     public String toString() {
-        return "Professor" +
+        return "Professor:" +
                 " nome = " + nome + '\'' +
                 ", matricula = " + matricula +
                 ", disciplinas = " + Arrays.toString(disciplinas) +

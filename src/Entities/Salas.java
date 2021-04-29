@@ -43,7 +43,7 @@ public class Salas {
     }
     @Override
     public String toString() {
-        return "Salas{" +
+        return "Salas {" +
                 "nome_sala='" + nome_sala + '\'' +
                 ", capacidade_sala=" + capacidade_sala +
                 ", status=" + status +
