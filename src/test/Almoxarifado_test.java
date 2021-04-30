@@ -1,6 +1,6 @@
 package test;
 
-import Domain.Almoxarifado;
+import Domain.*;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

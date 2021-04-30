@@ -1,15 +1,22 @@
-import Facade.SIG_Facade;
+import Facade.*;
+import utils.Utils;
 
 import java.util.ArrayList;
 
 public class Program {
     public static void main(String[] args) throws Exception {
         SIG_Facade facade = new SIG_Facade();
-        String[] historico = new String[2];
-        String[] disciplinas = new String[2];
-        ArrayList<String> produtos= new ArrayList<>();
-        String[] pedido = new String[2];
-
+        Utils disciplinas = new Utils();
+        Utils historico = new Utils();
+        Utils pedidos = new Utils();
+        Utils produtos = new Utils();
+        historico.add("Matemática, 10");
+        historico.add("Português, 10");
+        disciplinas.add("Matemática");
+        disciplinas.add("Português");
+        pedidos.add("Livro");
+        pedidos.add("Caneta");
+        produtos.listAdd("Caderno");
 
         //ADMINISTRATIVA
         facade.Entrevistas_Reunioes("25/04/2021","reuniao");
@@ -19,22 +26,19 @@ public class Program {
         //FINANCEIRO
         System.out.println(facade.BalancoContas_FolhaDePagamento(5000));
         //PROFESSOR
-        disciplinas[0] = "Matemática";
-        disciplinas[1] = "Calculo 1";
-        System.out.println(facade.Alocacoes_TempoDeCasaProfessor("Marcos",1, disciplinas,1));
+        System.out.println(facade.Alocacoes_TempoDeCasaProfessor("Marcos",
+                1, disciplinas.getArray(),1));
 
         //ALUNOS
-        historico[0] = "Matemática, 10";
-        historico[1] = "Português, 10";
-        System.out.println(facade.Historico_RDM_Alunos("Lucas",2,disciplinas,historico));
+        System.out.println(facade.Historico_RDM_Alunos("Lucas",
+                2,disciplinas.getArray(), historico.getArray()));
 
         //ALMOXORIFADO
-        produtos.add("lapis");
-        pedido[0] = "livro";
-        pedido[1] = "caneta";
-        System.out.println(facade.Estoque_Pedido_de_Compra(pedido,produtos));
+        System.out.println(facade.Estoque_Pedido_de_Compra(pedidos.getArray(),
+                produtos.getList()));
 
         //INFRA
-        System.out.println(facade.AlocacaoDeSalas("lab 07", 30));
+        System.out.println(facade.AlocacaoDeSalas("lab 07",
+                30));
     }
 }

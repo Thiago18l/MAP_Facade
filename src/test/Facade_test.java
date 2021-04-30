@@ -1,7 +1,6 @@
 package test;
 
-import Domain.Almoxarifado;
-import Facade.SIG_Facade;
+import Facade.*;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

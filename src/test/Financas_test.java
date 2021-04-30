@@ -1,7 +1,7 @@
 package test;
 
-import Domain.Financas;
-import Entities.Contas;
+import Domain.*;
+import Entities.*;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

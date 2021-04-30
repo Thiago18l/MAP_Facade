@@ -1,6 +1,6 @@
 package test;
 
-import Domain.Administracao;
+import Domain.*;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Rule;

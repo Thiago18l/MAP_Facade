@@ -1,6 +1,6 @@
 package test;
 
-import Entities.Contas;
+import Entities.*;
 import org.junit.Before;
 import org.junit.Test;
 

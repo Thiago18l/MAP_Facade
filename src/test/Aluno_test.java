@@ -1,6 +1,6 @@
 package test;
 
-import Entities.Aluno;
+import Entities.*;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
